@@ -4,6 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { TfiThought } from "react-icons/tfi";
 import { FaEye } from "react-icons/fa";
 import { formatMemberSince } from "../utils/functions";
+import LikeProfile from "./LikeProfile";
 const ProfileInfo = ({ userProfile }) => {
     // const userProfile = {
 	// 	// avatar_url: "https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745",
@@ -28,6 +29,7 @@ const ProfileInfo = ({ userProfile }) => {
 						<img src={userProfile?.avatar_url} className='rounded-md w-20 h-20 mb-2' alt='' />
 					</a>
                     <div className='flex gap-2 items-center flex-col'>
+					<LikeProfile userProfile={userProfile} />
 						<a
 							href={userProfile?.html_url}
 							target='_blank'
