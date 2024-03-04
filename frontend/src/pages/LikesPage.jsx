@@ -3,7 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import toast from "react-hot-toast";
 import { formatDate } from "../utils/functions";
 const LikesPage = () => {
-	 
+	
 	const [ likes, setLikes ] = useState([]);
 	useEffect(() => {
 		const getLikes = async() => {
